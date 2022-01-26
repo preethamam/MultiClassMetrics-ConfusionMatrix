@@ -1,6 +1,10 @@
 # Introduction
 Given the confusion matrix finds the two or multiclass metrics such as precision, recall, F1-score, etc.
 
+Confusion matric:
+![prec-recall](https://user-images.githubusercontent.com/28588878/151140570-1259cc2a-9457-4b42-be0c-9f25dc89f93e.png)
+
+Function outputs:
 | Function | Output Description |
 | --- | --- |
 | `multiclass_metrics_common` | Outputs metrics <br> Precision <br> Recall <br> Accuracy <br> Specificity <br> F1score |
@@ -9,7 +13,6 @@ Given the confusion matrix finds the two or multiclass metrics such as precision
 
 # Requirements
 MATLAB <br />
-
 
 # MATLAB Central
 
