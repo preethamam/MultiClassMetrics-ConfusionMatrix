@@ -1,5 +1,15 @@
 function [Result,ReferenceResult] = multiclass_metrics_special(confMatrix)
             
+%%***********************************************************************%
+%*                         Multiclass metrics                           *%
+%*        Finds the multiclss metrics provided a confusion matrix.      *%
+%*                                                                      *%
+%* Code author: Preetham Manjunatha                                     *%
+%* Github link: https://github.com/preethamam                           %*
+%* Date: 11/24/2021                                                     *%
+%************************************************************************%
+%
+%************************************************************************%
 %     %confusion matrix for multiple class start
 %     %Inputs-1.Actual Class Labels,2.Predict Class Labels and 3.Display if need
 %     %Outputs

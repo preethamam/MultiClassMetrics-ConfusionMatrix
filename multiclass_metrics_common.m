@@ -5,7 +5,7 @@ function metrics = multiclass_metrics_common(confmat)
 %*        Finds the multiclss metrics provided a confusion matrix.      *%
 %*                                                                      *%
 %* Code author: Preetham Manjunatha                                     *%
-%* Github link: https://github.com/preethamam
+%* Github link: https://github.com/preethamam                           %*
 %* Date: 11/24/2021                                                     *%
 %************************************************************************%
 %
