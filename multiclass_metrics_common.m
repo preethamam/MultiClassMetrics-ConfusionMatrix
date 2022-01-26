@@ -1,8 +1,8 @@
-function [Precision, Recall, Accuracy, Specificity, F1score] = multiclass_metrics_common(confmat) 
+function metrics = multiclass_metrics_common(confmat) 
 
 %%***********************************************************************%
-%*                           Panorama Cropper                           *%
-%*        Crops a fully stitched panorama with black/white background.  *%
+%*                         Multiclass metrics                           *%
+%*        Finds the multiclss metrics provided a confusion matrix.      *%
 %*                                                                      *%
 %* Code author: Preetham Manjunatha                                     *%
 %* Github link: https://github.com/preethamam
@@ -11,16 +11,14 @@ function [Precision, Recall, Accuracy, Specificity, F1score] = multiclass_metric
 %
 %************************************************************************%
 %
-% Usage: croppedImage = panoramaCropper(input, stitchedImage)
-% Inputs: input.canvas_color            - Background canvas color: 'black'
-%                                         | 'white'
-%         input.blackRange              - Threshold value > 0 and 
-%                                         < some number close to 0 (e.g, 5, 10).     
-%         input.whiteRange              - Threshold value close to 255  
-%                                         (e.g, 254, 250, 236,...)
-%         input.showCropBoundingBox     - Display the cropping bounding box
+% Usage: metrics  = multiclass_metrics_common(confmat)
+% Inputs: confmat  - confusion matrix -- N x N matrix
 % 
-% Outputs: croppedImage - Final cropped image
+% Outputs: metrics - metrics.Precision = Precision;
+%                    metrics.Recall = Recall;
+%                    metrics.Accuracy = Accuracy;
+%                    metrics.Specificity = Specificity;
+%                    metrics.F1score = F1score;
 
 % Array initialization
 N = size(confmat,1);
@@ -86,5 +84,11 @@ else
     
 end
 
+% Output
+metrics.Precision = Precision;
+metrics.Recall = Recall;
+metrics.Accuracy = Accuracy;
+metrics.Specificity = Specificity;
+metrics.F1score = F1score;
  
 
