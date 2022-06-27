@@ -14,9 +14,8 @@ confmat = [298     2       1     0       1       1     3      1       1       0;
  
  
  
- [Precision, Recall, Accuracy, Specificity, F1score] = multiclass_metrics_2(confmat)
- [Result,ReferenceResult] = multiclass_metrics(confmat)
-%  Result
+ [metrics] = multiclass_metrics_common(confmat)
+ [Result,ReferenceResult] = multiclass_metrics_special(confmat)
 
  
 
