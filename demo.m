@@ -10,12 +10,7 @@ confmat = [298     2       1     0       1       1     3      1       1       0;
      3     5       3     1       7       1     0      289     1       0;
      0     1       3     13      1       0     11     1       289     0;
      0     6       0     1       6       1     2      1       4       304];
- 
- 
-
-load matlab.mat
-[confmat,order] = confusionmat(Y_actual,Yhat);
- 
+  
 [Result,ReferenceResult] = multiclass_metrics_special(confmat)
 
  
