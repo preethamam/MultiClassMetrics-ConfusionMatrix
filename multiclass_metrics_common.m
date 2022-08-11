@@ -54,8 +54,8 @@ if size(confmat,1) > 2
     
         % Remove junks         
         stats = [Precision', Recall', F1score', Accuracy', Specificity'];
-        stats(any(isinf(stats),2),:) = [];
-        stats(any(isnan(stats),2),:) = [];
+        stats(any(isinf(stats),2),:) = 0;
+        stats(any(isnan(stats),2),:) = 0;
         
         % Compute averages
         Accuracy  = sum(stats(:,4));
