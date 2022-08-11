@@ -34,6 +34,8 @@ function [Result,ReferenceResult] = multiclass_metrics_special(confMatrix)
 %     
 %     %%Modified by Preetham Manjunatha
 %     %%Date  02-03-2020
+%     %%Note: Fixed Abbas written code where the NaN and Inf values were
+%     not considered while performaing the class average.
 % 
 %     % clc
 %     % clear all
@@ -144,8 +146,8 @@ function [Result,ReferenceResult] = multiclass_metrics_special(confMatrix)
 
     % Remove NANs and INFs
     stats = [Precision', Recall', F1_score', MCC'];
-    stats(any(isinf(stats),2),:) = [];
-    stats(any(isnan(stats),2),:) = [];
+    stats(any(isinf(stats),2),:) = 0;
+    stats(any(isnan(stats),2),:) = 0;
 
     %Output Struct for over all class lists
     Result.Recall=mean(stats(:,2));
