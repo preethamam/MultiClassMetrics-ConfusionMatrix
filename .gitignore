@@ -28,3 +28,5 @@ ScratchPad.m
 
 # Ignore SASS config files
 .sass-cache
+
+prec-recall
