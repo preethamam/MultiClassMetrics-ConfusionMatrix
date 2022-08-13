@@ -11,7 +11,8 @@ confmat = [298     2       1     0       1       1     3      1       1       0;
      0     1       3     13      1       0     11     1       289     0;
      0     6       0     1       6       1     2      1       4       304];
   
-[Result,ReferenceResult] = multiclass_metrics_special(confmat)
+[Result_special,ReferenceResult] = multiclass_metrics_special(confmat)
+Result_common = multiclass_metrics_common(confmat)
 
  
 
