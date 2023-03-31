@@ -18,5 +18,4 @@ MATLAB
 # MATLAB Central
 [![View Multiclass metrics of a confusion matrix on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105825-multiclass-metrics-of-a-confusion-matrix)
 
-
-
+Please rate and provide feedback for the further improvements.
