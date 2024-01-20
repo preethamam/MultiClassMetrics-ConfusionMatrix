@@ -1,4 +1,6 @@
 # Introduction
+[![View Multiclass metrics of a confusion matrix on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105825-multiclass-metrics-of-a-confusion-matrix) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=preethamam/MultiClassMetrics-ConfusionMatrix)
+
 Given the confusion matrix finds the two or multiclass metrics such as precision, recall, F1-score, etc.
 
 | Confusion matrix |
@@ -15,7 +17,5 @@ Function outputs:
 # Requirements
 MATLAB
 
-# MATLAB Central
-[![View Multiclass metrics of a confusion matrix on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105825-multiclass-metrics-of-a-confusion-matrix)
-
+# Feedback
 Please rate and provide feedback for the further improvements.
